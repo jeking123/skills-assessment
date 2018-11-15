@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="css/styles.css">
+
+<div id="contact">
+  <header>
+    <h3>Contacts</h3>
+  </header>
+  <article class="contactList">
+    <article class="overlay" id="overlay" onclick="deactOverlay()">
+      <div class="contact">
+        <div><span class="status is-online"></span></div>
+        <div class="name">Scott</div>
+        <div>
+          <p class="email"><a href="#">scott@mailnator.com</a></p>
+          <p class="phone">323-555-1234</p>
+          <p>1234 W anderson <br> spokane wa 99201</p>
+        </div>
+      </div>
+    </article>
+    <div>
+      <div class="contact">
+        <div><span class="status is-online"></span></div>
+        <div class="name">Christian</div>
+        <div class="email">christian@yahoo.com</div>
+        <div class="phone hidden">323-555-1234</div>
+      </div>
+      <div class="contact">
+        <div><span class="status is-online"></span></div>
+        <div class="name">Rich</div>
+        <div class="email"><a href="#"></a>rich@tripod.com</div>
+        <div class="phone hidden">323-555-1234</div>
+      </div>
+      <div class="contact" onclick="initOverlay()">
+        <div><span class="status is-online"></span></div>
+        <div class="name">Scott</div>
+        <div class="email">scott@mailnator.com</div>
+        <div class="phone hidden">323-555-1234</div>
+      </div>
+      <div class="contact">
+        <div><span class="status is-online"></span></div>
+        <div class="name">Danny</div>
+        <div class="email">danny@hotmail.com</div>
+        <div class="phone hidden">323-555-1234</div>
+      </div>
+      <div class="contact">
+        <div><span class="status is-offline"></span></div>
+        <div class="name">Taka</div>
+        <div class="email">taka@myspace.com</div>
+        <div class="phone hidden">323-555-1234</div>
+      </div>
+      <div class="contact">
+        <div><span class="status is-away"></span></div>
+        <div class="name">Tim</div>
+        <div class="email">tim@netscape.com</div>
+        <div class="phone hidden">323-555-1234</div>
+      </div>
+      <div class="contact">
+        <div><span class="status is-online"></span></div>
+        <div class="name">Patrick</div>
+        <div class="email">patrick@live.com</div>
+        <div class="phone hidden">323-555-1234</div>
+      </div>
+      <div class="contact">
+        <div><span class="status is-away"></span></div>
+        <div class="name">Jacques</div>
+        <div class="email">jacques@aol.com</div>
+        <div class="phone hidden">323-555-1234</div>
+      </div>
+    </div>
+  </article>
+  <footer>
+    <select name="contactType" id="contactType" onchange="contactSwitch()">
+      <option value="email">Email address</option>
+      <option value="phone">Phone number</option>
+    </select>
+  </footer>
+</div>
+
+<script src="scripts/scripts.js"></script>
